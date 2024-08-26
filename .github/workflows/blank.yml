@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youseftrockenbau</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #2c3e50;
+            border-radius: 5px;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero p {
+            font-size: 1.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .section {
+            padding: 50px 20px;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .services, .about, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service-item, .about-item, .contact-item {
+            flex: 1;
+            margin: 10px;
+            min-width: 250px;
+        }
+        .service-item h3, .about-item h3, .contact-item h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .service-item p, .about-item p, .contact-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.2em;
+            }
+            .service-item, .about-item, .contact-item {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Youseftrockenbau</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">Über uns</a>
+    <a href="#services">Leistungen</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<section class="hero" id="home">
+    <h1>Ihr Partner für Trockenbau, Türen und Fenster</h1>
+    <p>Professionelle Bau- und Renovierungsarbeiten mit höchster Präzision</p>
+</section>
+
+<section class="section services" id="services">
+    <h2>Unsere Leistungen</h2>
+    <div class="service-item">
+        <h3>Trockenbau</h3>
+        <p>Wir bieten professionelle Trockenbauarbeiten für alle Arten von Bauprojekten, sowohl für den privaten als auch den gewerblichen Bereich.</p>
+    </div>
+    <div class="service-item">
+        <h3>Türen- und Fenstermontage</h3>
+        <p>Fachgerechte Montage von Türen und Fenstern, angepasst an Ihre individuellen Bedürfnisse und Anforderungen.</p>
+    </div>
+    <div class="service-item">
+        <h3>Abbrucharbeiten</h3>
+        <p>Sichere und effiziente Abbrucharbeiten, die Platz für Ihre neuen Projekte schaffen. Wir kümmern uns um die fachgerechte Entsorgung.</p>
+    </div>
+</section>
+
+<section class="section about" id="about">
+    <h2>Über uns</h2>
+    <div class="about-item">
+        <h3>Unsere Philosophie</h3>
+        <p>Youseftrockenbau steht für Qualität, Zuverlässigkeit und fachliches Know-how. Wir legen großen Wert auf Kundenzufriedenheit und setzen Ihre Wünsche präzise um.</p>
+    </div>
+    <div class="about-item">
+        <h3>Unsere Geschichte</h3>
+        <p>Seit vielen Jahren sind wir in der Bau- und Renovierungsbranche tätig und haben uns einen Namen als vertrauenswürdiger Partner erarbeitet.</p>
+    </div>
+    <div class="about-item">
+        <h3>Unser Team</h3>
+        <p>Unser Team besteht aus erfahrenen Fachleuten, die sich durch ihre Expertise und Leidenschaft für das Handwerk auszeichnen.</p>
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <h2>Kontaktieren Sie uns</h2>
+    <div class="contact-item">
+        <h3>Unsere Adresse</h3>
+        <p>Musterstraße 123, 12345 Musterstadt</p>
+    </div>
+    <div class="contact-item">
+        <h3>Rufen Sie uns an</h3>
+        <p>Telefon: 01234 567890</p>
+    </div>
+    <div class="contact-item">
+        <h3>Schreiben Sie uns</h3>
+        <p>Email: info@youseftrockenbau.de</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Youseftrockenbau. Alle Rechte vorbehalten.</p>
+</footer>
+
+</body>
+</html>
+```
+
+### Merkmale:
+- **Modernes Design**: Die Webseite verwendet ein klares, modernes Design mit einer ansprechenden Typografie und Farbpalette.
+- **Responsive Layout**: Der Code ist so gestaltet, dass die Seite auf verschiedenen Geräten gut aussieht (Desktop, Tablet, Mobil).
+- **Flexibilität**: Der Code ist flexibel gestaltet, sodass weitere Inhalte oder Abschnitte einfach hinzugefügt werden können.
+
+### Nächste Schritte:
+1. **Bildmaterial**: Ersetze die Platzhalterbilder (`https://via.placeholder.com/1500x500`) durch echte Bilder, die das Unternehmen repräsentieren.
+2. **Veröffentlichung**: Du kannst den Code auf einer der zuvor erwähnten Plattformen wie GitHub Pages, Netlify oder einem Website-Builder wie Wix oder Weebly hochladen, um die Webseite live zu schalten.
